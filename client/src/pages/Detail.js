@@ -25,6 +25,8 @@ function Detail() {
 
   const [currentProduct, setCurrentProduct] = useState({});
 
+  console.log(currentProduct);
+
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
   const { products, cart } = state;
@@ -88,7 +90,7 @@ function Detail() {
 
   return (
     <>
-      {currentProduct && cart ? (
+      {currentProduct ? (
         <div className="container my-1">
           <Link to="/">← Back to Products</Link>
 
