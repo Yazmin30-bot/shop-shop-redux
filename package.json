@@ -4,9 +4,9 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run local:prod || npm run local:dev",
-    "local:prod": "cd server && npm start",
-    "local:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "start": "cd server && npm start",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
     "heroku-postbuild": "cd client && npm run build"
