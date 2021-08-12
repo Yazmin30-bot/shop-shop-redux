@@ -4,7 +4,6 @@
   "description": "",
   "engines": {
     "node": "16.0.0",
-    "npm": "1.2.25"
   },
   "main": "server/server.js",
   "homepage": ".",
