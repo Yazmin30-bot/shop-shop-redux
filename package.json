@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "engines": {
-    "node": "16.0.0"
+    "node": "16.0.0",
+    "npm": "1.2.25"
   },
   "main": "server/server.js",
   "homepage": ".",
